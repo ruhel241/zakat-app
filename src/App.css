@@ -1,0 +1,98 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.MuiBox-root .css-81aybb {
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.MuiPaper-root {
+  /* position: relative;
+    margin: 0; */
+    /* margin-bottom: 56px; */
+    /* box-sizing: border-box; */
+    /* display: block !important;
+    padding-bottom: 120px;
+    box-sizing: border-box; */
+}
+
+* {
+  margin: 0;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.px-2 {
+  height: 100%;
+  overflow-x: hidden;
+  padding-bottom: 120px;
+  margin: 15px;
+}
+
+
+.MuiBox-root > .MuiPaper-root {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.MuiBottomNavigation-root  {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+
+.MuiGrid-root {
+  width: initial !important;
+  margin: 0 !important;
+  align-items: center;
+  /* padding-left: 25px; */
+}
+
+.zakat_btn {
+  width: 100%;
+}
