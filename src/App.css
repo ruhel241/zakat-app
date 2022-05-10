@@ -1,58 +1,7 @@
-.App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
 .MuiBox-root .css-81aybb {
   height: 95vh;
   overflow: hidden;
   position: relative;
-}
-
-.MuiPaper-root {
-  /* position: relative;
-    margin: 0; */
-    /* margin-bottom: 56px; */
-    /* box-sizing: border-box; */
-    /* display: block !important;
-    padding-bottom: 120px;
-    box-sizing: border-box; */
 }
 
 * {
@@ -63,11 +12,17 @@
   box-sizing: border-box;
 }
 
-.px-2 {
+.zakat-container {
+  position: relative;
   height: 100%;
   overflow-x: hidden;
-  padding-bottom: 120px;
-  margin: 15px;
+  padding: 15px 15px 120px 15px;
+}
+.zakat-container.modal-open {
+  background: rgba(0,0,0,0.4);
+}
+.zakat-container.modal-open form {
+  margin-top: -300px;
 }
 
 
@@ -75,6 +30,10 @@
   margin: 0;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+.MuiBox-root header {
+  z-index: 999;
   position: relative;
 }
 
@@ -95,4 +54,49 @@
 
 .zakat_btn {
   width: 100%;
+}
+
+
+#zakat-modal {
+    position: sticky;
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 22%;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+#zakat-modal .close {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+#zakat-modal .close:hover {
+  color: #ff0000;
+}
+
+.zakat-modal-title {
+  margin-bottom: 30px;
+  border-bottom: solid 1px;
+  font-size: 28px;
+  font-weight: 900;
+}
+.zakat-modal-body p {
+  font-size: 23px;
 }
